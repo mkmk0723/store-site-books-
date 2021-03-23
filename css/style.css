@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    font-size: 0.875rem;
+    color: #2a2a2a;
+}
+
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 5%;
+}
+/* HEADER
+------------------------------------------- */
+.header-logo {
+    float:right;
+    padding: 30px 40px 0 0;
+}
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/mainvisual.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-bottom: 80px;
+}
+
+/* ARTICLE
+--------------------------------------------*/
+.section-title{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+.article-contents {
+    display: flex;
+    margin-bottom: 80px;
+    
+}
+.article-title img {
+    width: 520px;
+    margin-right: 25px;
+}
+
+   
+#article p{
+    width: 560px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.article-title ,.article-text{
+    position: relative;
+}
+ .article-text {
+    position: absolute;
+    top: 40%;
+    background-color:rgba(0, 0, 0,0.5) ;
+    color: white; 
+    left: 0;
+    right: 0;
+    height: 100px;
+    width: 100%;
+    max-width: 290px;
+    margin: 0 auto;
+    
+ 
+}
+.article-text h3 {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 1.25rem;
+}
+.article-text p{
+    position: absolute;
+    left: -45%;
+    font-weight: bold;
+    margin-bottom: 20px;
+   
+}
+a:hover{
+    opacity: 0.7;
+}
+/* FASHION & STYLE
+------------------------------------- */
+#fs { 
+    width: 100%;
+    height: 520px;
+    padding-top: 65px;
+    background-image: url(../images/fashion.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 80px;
+   
+}
+
+.button {
+    display: inline-block;
+    font-size: 0.75rem;
+    color: #2a2a2a;  
+    border: 1px #2a2a2a solid;
+    margin-top: 30px;
+    padding: 15px 36px;
+   text-align: center; 
+
+}
+/*CATALOG ANTIQUE
+---------------------------------------------  */
+.catalog-antique {
+    padding: 60px 0;
+    background: #F5F5F5;
+
+}
+.ca-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.catalog-antique .item {
+    width: 48%;
+    text-align: center;
+}
+.catalog-antique .item img {
+    width: 100%;
+}
+.catalog-antique .item p {
+   margin-bottom: 30px;
+   text-align: left;
+}
+.catalog-antique .item p:last-child {
+    margin-bottom: 0;
+}
+     
+/* MAG88
+---------------------------------------- */
+#mag88 {
+    background: #2a2a2a;
+    font-size: 0.750rem;
+    
+}
+#mag88 .mag88-box {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+    color: white;
+    
+}
+#mag88 .item {
+    width: 33%;
+    line-height: 2;
+}
+#mag88 .item:first-child {
+    padding: 60px 0;
+}
+li {
+    list-style: none;
+}
+#mag88 .item li::before {
+    content: "-";
+    margin-right: 5px;
+}
+#mag88 .item .title {
+    margin-bottom: 10px;
+    font-size: 1.0rem;
+    font-weight: bold;
+}  
+#mag88 .copyright {
+    background-color:white;    
+    text-align: center;
+    padding: 30px 0;
+}
+/* モバイル版
+--------------------------------------- */
+@media screen and (max-width:896px){
+    /* #article */
+    .article-contents {
+       flex-direction: column;
+       align-items: center;
+    }
+    .article-title:first-child{
+        margin-bottom: 30px;
+    }
+
+    
+    
+    /* #fs */
+    #fa{
+
+        margin-bottom: 50px;
+    } 
+
+    /* #ca */
+    .catalog-antique .ca-box {
+         flex-direction: column;
+    }
+  .catalog-antique .item {
+      width: 100%;
+   } 
+   .catalog-antique {
+       padding: 30px 0;
+   }
+   .catalog-antique .item:first-child {
+       margin-bottom: 60px;
+   }
+
+
+   
+     /*#mag88  */
+     #mag88 .mag88-box{
+         flex-direction: column;
+         padding: 30px;
+        
+     }
+     
+    #mag88 .item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #mag88 .item:first-child {
+        text-align: center;
+        padding: 0;
+    }
+  
+
+
+ 
+
+
+
+
+}
